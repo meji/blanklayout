@@ -11,10 +11,11 @@
   --xxxl: calc(var(--s)*6); //48
   --xxxxl: calc(var(--s)*7); //56
   --xxxxxl: calc(var(--s)*8); //64
+  --superxl: calc(var(--s)*10); //80
 
   // fonts
   --font-body: 'Open Sans', Helvetica, sans-serif;
-  --font-titles: unit,  Helvetica, sans-serif;
+  --font-titles: "Oswald",  Helvetica, sans-serif;
   --body-text-s: 14px;
   --body-text-m: 16px;
   --body-text-l: 18px;
@@ -35,4 +36,7 @@
   //Transitions
   --transition: 0.3s;
 
+}
+.focus{
+  box-shadow: var(--focus-shadow)
 }

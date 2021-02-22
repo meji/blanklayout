@@ -415,7 +415,6 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -425,3 +424,14 @@ td,
 th {
   padding: 0;
 }
+
+ul,ol{margin:0; padding: 0}
+
+a, .link{text-decoration: none}
+
+*{box-sizing: border-box}
+*:focus{
+  outline: none;
+}
+
+img{max-width: 100%;}
