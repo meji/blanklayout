@@ -13,6 +13,9 @@
   --xxxxxl: calc(var(--s)*8); //64
   --superxl: calc(var(--s)*10); //80
 
+  //Radius
+  --rm: 6px;
+
   // fonts
   --font-body: 'Open Sans', Helvetica, sans-serif;
   --font-titles: "Oswald",  Helvetica, sans-serif;
@@ -22,16 +25,14 @@
 
 
   //colores
-  --c-main:#FF8A00;
+  --c-main:#449241;;
   --on-c-main: #fff;
-  --c-grey: #797979;
-  --c-grey-m-dark: #363636;
-  --c-grey-s-dark: #4d4d4d;
-  --c-gray-m-light: #b5b5b5;
-  --c-grey-s-light: #e0e0e0;
-  --c-grey-l-light: #fbfbfb;
-  --c-overlay: #363636;
-  --c-red-light: #C43131;
+  --c-secondary: #F0D943;
+  --on-c-secondary: #000;
+  --c-main-light:#91CC87;
+  --c-grey: #333333;
+  --c-grey-dark: #171717;
+  --c-grey-light: #BBBBBB;
 
   //Transitions
   --transition: 0.3s;

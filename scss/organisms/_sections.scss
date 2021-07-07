@@ -1,5 +1,8 @@
 section.section, .margin-section, .margin-section-mobile{
   margin-top: 48px;
+  h2{
+    margin-top:0;
+  }
 }
 
 
@@ -55,7 +58,7 @@ section.padding{
   }
   section.padding{
     padding-top: 80px;
-    padding-bottom: 80px; 
+    padding-bottom: 80px;
   }
   section .left-mobile-extended{
     margin-left: 0;

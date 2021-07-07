@@ -1,16 +1,20 @@
-body,
-p,
-li {
+body{
   font-size: var(--body-text-m);
   font-family: var(--font-body);
-  color: var(--c-grey-s-dark);
   line-height: 1.7;
-  margin-bottom: var(--s);
-  margin-top: 0;
-  &.body-text-l {
-    font-size: var(--body-text-l);
+  p,
+  li {
+    margin-bottom: var(--s);
+    margin-top: 0;
+    color: var(--c-grey-light);
+    &.body-text-l {
+      font-size: var(--body-text-l);
+    }
   }
 }
+
+
+
 
 h1,
 h2,
@@ -37,7 +41,7 @@ h1,
 h2,
 .h2 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 48px;
   margin-bottom: 32px;
   line-height: 1.5;
@@ -49,7 +53,7 @@ h2,
 h3,
 .h3 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 24px;
 }
 h4,
@@ -115,7 +119,7 @@ h6,
   h2,
   .h2 {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 80px;
     margin-bottom: 48px;
     line-height: 1.2;
@@ -127,7 +131,7 @@ h6,
   h3,
   .h3 {
     font-size: 2.25rem;
-    font-weight: 500;
+    font-weight: 700;
   }
   h4,
   .h4 {

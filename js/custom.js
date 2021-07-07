@@ -93,27 +93,31 @@ const accordionSimple = () => {
   }
 };
 
-//Scroll Up para cabecera y animación profesores scroll up de cabecera y de curso
-let lastScrollTop = 0;
-window.addEventListener("scroll", function() {
-  let st = window.scrollY;
-  const wrapper = document.getElementById("wrapper");
-  //Scroll classes up and down
-  if (st > 88) {
-    if (st > lastScrollTop) {
-      wrapper.classList.remove("up");
-      wrapper.classList.add("down");
+//Scroll Up para cabecera
+const fixedHeaderInteraction = () => {
+  let lastScrollTop = 0;
+  const headerHeight = document.getElementById("header").offsetHeight;
+  window.addEventListener("scroll", function() {
+    let st = window.scrollY;
+    const wrapper = document.getElementById("wrapper");
+    //Scroll classes up and down
+    if (st > headerHeight) {
+      wrapper.classList.add("fixed");
+      if (st > lastScrollTop) {
+        wrapper.classList.remove("up");
+        wrapper.classList.add("down");
+      } else {
+        wrapper.classList.add("up");
+        wrapper.classList.remove("down");
+      }
+      lastScrollTop = st;
     } else {
-      wrapper.classList.add("up");
+      wrapper.classList.remove("fixed");
+      wrapper.classList.remove("up");
       wrapper.classList.remove("down");
     }
-    lastScrollTop = st;
-  } else {
-    wrapper.classList.remove("up");
-    wrapper.classList.remove("down");
-  }
-});
-
+  });
+};
 /*smooth_scroll*/
 const smoothScrolls = () => {
   const links = document.querySelectorAll(".smooth");
